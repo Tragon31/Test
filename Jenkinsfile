@@ -7,7 +7,7 @@
 /////////////////////////////////////////////////////////
 
 pipeline {
-agent { label 'TestSlave' }
+agent { label 'master' }
 stages{
    stage("Checkout code")
    {
