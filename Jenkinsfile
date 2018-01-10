@@ -17,7 +17,7 @@ stages{
    }
    stage("Build APP")
    {
-      when { expression { 1=0 } }
+      when { expression { 1==0 } }
       steps{
           echo 'Building my APP'
       }
