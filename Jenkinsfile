@@ -11,23 +11,33 @@ pipeline {
 stages{
    stage("Checkout code")
    {
-      echo 'Checkout from GitHub'
+      steps{
+          echo 'Checkout from GitHub'
+      }
    }
    stage("Build APP")
    {
-      echo 'Building my APP'
+      steps{
+          echo 'Building my APP'
+      }
    }
    stage("Deploying Nexus")
    {
-      echo 'Deploy packages Nexus'
+      steps{
+          echo 'Deploy packages Nexus'
+      }
    }
    stage("Install APP")
    {
-      echo 'Installing my APP'
+      steps{
+          echo 'Installing my APP'
+      }
    }
    stage("Running Tests")
    {
-      echo 'TNR to verify my APP is working'
+      steps{
+          echo 'TNR to verify my APP is working'
+      }
    }
  }
 }
